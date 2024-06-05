@@ -1,0 +1,29 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.question {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.answer {
+    /* display: none; */
+    margin-bottom: 20px;
+}

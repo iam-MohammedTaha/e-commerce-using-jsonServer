@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row" *ngFor="let item of payment.getItems()">
+        <div class="col-6">
+            <div>
+                <img [src]="item.uploadPhoto" [alt]="item.name" height="390px" width="600px">
+                <h2>{{item.name}}</h2>
+                <p>&#8377;{{item.dp}}</p>
+            </div>
+        </div>
+            <div class="col-6">
+                <div class="card px-4 py-5">
+                    <label>Card Number:</label>
+                    <input type="text" placeholder="Enter your card number"><br>
+                    <label>Expiery Date:</label>
+                    <input type="date" style="color: gray;"><br>
+                    <label>CVV:</label>
+                    <input type="number" placeholder="..."><br>
+                    <label>Card Name:</label>
+                    <input type="text" placeholder="Enter card name"><br>
+                    <button class="btn btn-success m-2" (click)="confirmPayment()">Confirm</button>
+                    <button class="btn btn-danger m-2" (click)="canclePayment(item)">Cancle</button>
+                </div>
+            </div>
+    </div>
+</div>

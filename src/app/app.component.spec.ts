@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'e-commerce-using-jsonServer' title`, () => {
+  it(`should have the 'e-commerce' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('e-commerce-using-jsonServer');
+    expect(app.title).toEqual('e-commerce');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, e-commerce-using-jsonServer');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, e-commerce');
   });
 });
